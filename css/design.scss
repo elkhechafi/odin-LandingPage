@@ -1,0 +1,600 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Volkhov:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+$clr-bg: #0A1624;
+$clr-primary : #D86411;
+$clr-font: #fff;
+$font-title: 700;
+$font-text: 400;
+
+
+a{
+    text-decoration: none;
+    color: inherit;
+    height: max-content;
+}
+
+body{
+    background-color: $clr-bg;
+    position: relative;
+    color: #fff;
+    font-family: 'Volkhov', serif;
+    overflow-x: hidden;
+    text-rendering: optimizeSpeed;
+}
+
+.nav{
+    z-index: 9;
+    position: fixed;
+    top: 0%;
+    height: 10.7vh;
+    width: 100vw;
+    padding: 0 5%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #10101Aae;
+    .logo{
+        width: 5%;
+        height: 70%;
+    }
+    .pageNames{
+        list-style: none;
+        width: 35%;
+        display: inline-flex;
+        justify-content: space-evenly;
+        align-items: center;
+        .pageName{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+    .contact{
+        width: 7%;
+        height: 70%;
+        background-color: #10101A;
+        color: #fff;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(./../img/5053309.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    .leftContent{
+        width: 40%;
+        height: 70%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 69px;
+        .subTitle{
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 21px;
+        }
+        .title{
+            margin-top: 19px;
+            font-weight: normal;
+            font-size: 58px;
+            line-height: 75px;
+        }
+        .para{
+            width: 100%;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+            margin: 40px 0 0 0;
+        }
+        .decouvrez{
+            margin-top: 51px;
+            width: 350px;
+            height: 61px;
+            border: 4px solid #FFFFFF;
+            text-align: center;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            h4{
+                font-style: normal;
+                font-weight: normal;
+                font-size: 22px;
+                line-height: 28px;
+            }
+        }
+    }
+    .rightContent{
+        width: 50%;
+        height: 99%;
+          /* The image used */
+        background-image: url("./../img/log-in-girl.svg");
+
+        /* Set a specific height */
+        min-height: 100%;
+
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.about{
+    width:100%;
+    height: 100vh;
+    background-color: $clr-bg;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 10vh;
+    position: relative;
+    background-color: #fff;
+    // .aboutLayerBg{
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     height: 100%;
+    //     width: 100%;
+    // }
+    .leftContent{
+        box-shadow: 0px 0px 9px 6px #10101ac0;
+        background-color: $clr-bg;
+        width: 40%;
+        height: 70%;
+        padding: 5vh 3vw;
+        .aboutTitle{
+            font-size: 41px;
+            line-height: 53px;
+            margin-bottom: 73px;
+        }
+        .aboutPara{
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 26px;
+        }
+    }
+    .rightContent{
+        width: 40%;
+        height: 65%;
+        position: relative;
+        .aboutImgFirst{
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: .9;
+            width: 60%;
+            height: 60%;
+        }
+        .aboutImgSecond{
+            position: absolute;
+            top: 50%;
+            left: 30%;
+            height: 60%;
+            width: 60%;
+        }
+    }
+    .link{
+        font-size: 20px;
+        line-height: 26px;
+
+        /* identical to box height */
+
+        color: #FFFFFF;
+
+        text-shadow: 0px 4px 10px rgba(240, 207, 207, 0.25);
+    }
+}
+
+.service{
+    width: 100%;
+    height: 100vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 5%;
+    color: #e6e6ec;
+    .serviceTitle{
+        width: 100%;
+        height: 10%;
+    }
+     .services{
+         width: 100%;
+         height: 80%;
+         display: inline-flex;
+         justify-content: space-between;
+         align-items: center;
+         flex-wrap: wrap;
+    
+         --fs-700: 3.5rem;
+         --fs-400: 1.25rem;
+         /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+         ul[role="list"],
+         ol[role="list"] {
+           list-style: none;
+         }
+         /* A elements that don't have a class get default styles */
+         a:not([class]) {
+             text-decoration-skip-ink: auto;
+           }
+      
+         /* Make images easier to work with */
+         img,
+         picture {
+           width: 100%;
+           display: block;
+           height: 15vh;
+         }
+
+         .uppercase {
+             text-transform: uppercase;
+           }
+        
+           .text-primary {
+             color: var(--clr-primary);
+           }
+        
+           .text-accent {
+             color: var(--clr-secondary);
+           }
+        
+           .fs-700 {
+             font-size: var(--fs-700);
+             line-height: 1;
+           }
+
+           .container {
+             padding: 0rem 0rem;
+             max-width: 93%;
+             margin: 0 auto;
+             .flex {
+                display: flex;
+                gap: var(--gap, 1rem);
+              }
+           
+              .grid {
+                display: grid;
+                gap: var(--gap, 1rem);
+              }
+           
+              .grid--columns {
+                grid-auto-columns: 1fr;
+                grid-auto-flow: column;
+              }
+           
+              /* featured grid */
+           
+              .feature-grid-container {
+                perspective: 100rem;
+                position: relative;
+              }
+           
+               .feature-grid-text {
+                font-size: 1rem;
+                text-align: center;
+                background: linear-gradient(
+                  90deg, rgba(65, 83, 102, 0.8) 75%, hsla(255, 50%, 50% , 0)
+                );
+                display: inline-flex;
+                align-items: center;
+                height: 70%;
+                padding: 0% 3%;
+               }
+           
+              .feature-grid {
+                position: relative;
+                z-index: -1;
+                // left: calc(1000px - 100vw) * -1;
+                width: 55rem;
+                align-self: center;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                transform-origin: left;
+                transform: rotateY(-40deg);
+                margin-top: 5%;
+              }
+           
+              .feature-grid > a {
+                border-radius: 0.75em;
+                transition: transform 350ms ease-in-out;
+                overflow: hidden;
+              }
+           
+              .feature-grid > a:hover,
+              .feature-grid > a:focus-visible {
+                   transform: scale(1.1);
+                    box-shadow: 0 0 1.5rem hsl(0, 0%, 100% / 0.8);
+              }
+           
+              .feature-grid > :nth-child(1),
+              .feature-grid > :nth-child(4),
+              .feature-grid > :nth-child(5),
+              .feature-grid > :nth-child(7) {
+                grid-row: span 2;
+              }
+           
+              .feature-grid > :nth-child(2),
+              .feature-grid > :nth-child(3) {
+                grid-row: span 2;
+              }
+           
+              .feature-grid > :nth-child(6) {
+                grid-column: 2 / span 2;
+                grid-row: 3 / span 4;
+              }
+           }
+        
+         
+    }
+}
+
+.work{
+  width: 100%;
+  height: max-content;
+  background-color: $clr-font;
+  color: $clr-bg;
+  text-align: center;
+  padding: 10vh 3vw 5vh 3vw;
+  
+  .categories{
+    padding-top: 4vh;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 60%;
+    list-style: none;
+    font-size: 0.8em;
+    font-weight: bold;
+    .category{
+      color: rgb(65, 65, 65);
+      transition: 300ms;
+      &:hover{
+        color: #ccc;
+      }
+    }
+    .active{
+      color: #ccc;
+    }
+
+  }
+
+  .portfolio{
+    width: 100%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    /* The "show" class is added to the filtered elements */
+    .show {
+      display: block;
+    }
+    .work-item{
+      width: 30%;
+      height: 100%;
+      max-height: 27vh;
+      position: relative;
+      box-sizing: border-box;
+      margin: 1%;
+      .workImg{
+        height: 100%;
+        max-height: 27vh;
+        width: 100%;
+        margin: 2% 2%;
+        border-radius: 5px;
+        box-shadow: 3px 0px 9px 3px #ccc;
+      }
+      .work-caption{
+        display: none;
+      }
+      &:hover{
+        .work-caption{
+          background-color: rgba(221, 221, 221, 0.644);
+          z-index: 2;
+          margin: 2% 2%;
+          display: inline-flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          position: absolute;
+          top: 0%;
+          left: 0%;
+          height: 100%;
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.ctaPortfolio{
+  width: 100%;
+  height: 25vh;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+  .content{
+    width: 40%;
+    text-align: left;
+    font-style: italic;
+  }
+  button{
+    width: 20%;
+    background-color: $clr-font;
+    color: $clr-bg;
+    border: none;
+    padding: 1% 2%;
+    box-shadow: 3px 0px 9px 3px #ccc;
+  }
+}
+
+.team{
+  background-color: $clr-font;
+  color: $clr-bg;
+  text-align: center;
+  padding-top: 10vh;
+  height: 70vh;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  h4{
+    padding-top: 5%;
+    width: 50%;
+    font-style: italic;
+    span{
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  }
+  button{
+    margin-top: 15vh;
+    width: 30%;
+    padding: 1% 0%;
+    background-color: $clr-bg;
+    color: $clr-font;
+    border: none;
+  }
+}
+
+.blog{
+  padding-top: 7vh;
+  height: 70vh;
+  text-align: center;
+  .blogSection{
+    width: 70%;
+    display: inline-flex;
+    justify-content: space-evenly;
+    align-items: center;
+    .article{
+      width: 25%;
+      height: 45vh;
+      position: relative;
+      .articleImg{
+        width: 100%;
+        height: 100%;
+        border-radius: 25px;
+        box-shadow: 3px 0px 9px 3px rgb(70, 69, 69);
+      }
+      .article-content{
+        position: absolute;
+        top: 2%;
+        left: 0%;
+        width: 100%;
+        height: 90%;
+        padding: 1% 3%;
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        color: $clr-bg;
+        transition: 2s ease-in-out;
+        h4{
+          font-style: italic;
+        }
+        &:hover{
+          background-color: #ddddddac;
+        }
+      }
+    }
+  }
+}
+
+footer{
+  width: 100%;
+  // height: max-content;
+  height: 100vh;
+  padding-top: 12vh;
+  background-image: url('./../img/5053309.jpg');/* Set a specific height */
+  min-height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .column{
+    width: 10%;
+    .services{
+      list-style: none;
+      .singleService{
+        margin-top: 2vh;
+      }
+    }
+  }
+  .large{
+    width: 40%;
+    flex-wrap: wrap;
+    h4{
+      width: 100%;
+      margin-bottom: 5vh;
+    }
+    .socialMedia{
+      width: 40%;
+      display: inline-flex;
+      justify-content: space-evenly;
+      align-items: flex-start;
+    }
+  }
+  .subfooter{
+    width: 100%;
+    text-align: center;
+    hr{
+      width: 70%;
+      color: #ccc;
+      margin: 2vh 15%;
+    }
+  }
+
+}
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+      scroll-behavior: auto;
+    }
+  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+  }
